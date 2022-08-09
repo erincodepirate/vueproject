@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A First App</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -13,11 +13,10 @@
     <div>
       <label for="goal">Goal</label>
       <input type="text" id="goal" v-model="enteredValue" />
-      <button>Add Goal</button>
+      <button v-on:click="addGoal">Add Goal</button>
     </div>
     <ul>
-      <!-- <li>Test</li> -->
-      <li></li>
+      <li v-for="goal in goals">{{goal}}</li>
     </ul>
   </div>
   <script src="https://unpkg.com/vue@3"></script>
