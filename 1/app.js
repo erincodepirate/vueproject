@@ -1,7 +1,8 @@
 const app = Vue.createApp({
     data: function() {
         return {
-            courseGoal: 'Pet a raccoon'
+            courseGoal: 'Pet a raccoon',
+            vueLink: 'https://vuejs.org'
         };
     }
 });
