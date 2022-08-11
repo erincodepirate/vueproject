@@ -24,6 +24,15 @@ const app = Vue.createApp({
     },
     resetInput() {
       this.name = '';
+    },
+  },
+  computed: {
+    fullname() {
+      console.log('running again');
+      if (this.name === '') {
+        return '';
+      }
+      return this.name + ' Marx';
     }
   }
 });
